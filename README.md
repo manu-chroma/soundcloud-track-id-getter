@@ -1,2 +1,2 @@
 # soundcloud-track-id-getter
-Something related to sound cloud.
+Takes soundcloud playlist link (eg: https://soundcloud.com/mikaelmoberg/sets/kygo) 
