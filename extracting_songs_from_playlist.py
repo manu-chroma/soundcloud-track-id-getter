@@ -13,7 +13,7 @@ print playlist.title
 print "\n"
 yo =  json.dumps(playlist.tracks)
 aye = json.loads(yo)
-client = soundcloud.Client(client_id="852f18e21a0f5fff8061415fdbb04691")
+client = soundcloud.Client(client_id=CLIENT_ID)
 #Playlist id =150058341 for mann ki baat sepetember 2015
 playlist = client.get('/playlists/150058341/')
 
