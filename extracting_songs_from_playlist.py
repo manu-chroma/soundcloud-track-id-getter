@@ -1,9 +1,9 @@
 #Deps: pip install soundcloud
 import soundcloud
 import json
-client = soundcloud.Client(client_id='852f18e21a0f5fff8061415fdbb04691')
+client = soundcloud.Client(client_id='YOUR_CLIENT_ID')
 
-link = raw_input("enter playlist link from soundcloud ")
+link = raw_input("enter playlist url from soundcloud ")
 res = client.get('/resolve', url=link)
 
 playlist = client.get("/playlists/"+str(res.id)+"/")
@@ -14,8 +14,9 @@ print "\n"
 yo =  json.dumps(playlist.tracks)
 aye = json.loads(yo)
 client = soundcloud.Client(client_id=CLIENT_ID)
+
 #Playlist id =150058341 for mann ki baat sepetember 2015
-playlist = client.get('/playlists/150058341/')
+#playlist = client.get('/playlists/150058341/')
 
 print playlist.title
 yo =  json.dumps(playlist.tracks)
